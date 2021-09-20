@@ -1,0 +1,33 @@
+Function declarations in header (tools.h)
+  // tools.h
+      #pragma once  // makes sure the file is included only once
+
+      int foo(pars);
+      void bar(pars);
+
+  // tools.cpp
+      #include "tools.h"
+      #include <iostream>
+
+      int foo(pars){
+      //function implementation
+      }
+
+      void bar(pars){
+      //function implementation
+      }
+
+  // main.cpp
+    #include "tools.h"
+    #include <iostream>
+
+    int main(){
+
+    int a, b;
+    a = 3;
+
+    b = foo(a);
+    bar(b);
+
+    return 0;
+    }

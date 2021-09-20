@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/christop/cpp/cpp02/header_source_sep/src/tools.cpp
+tools.h
+/home/christop/cpp/cpp02/header_source_sep/src/tools.h
+
+/home/christop/cpp/cpp02/header_source_sep/src/tools.h
+array
+-
+

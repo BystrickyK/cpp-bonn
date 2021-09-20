@@ -1,0 +1,18 @@
+project(first_project)  # mandatory
+cmake_minimum_required(VERSION 3.1)  # mandatory
+
+#Tell cmake to output binaries here
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
+
+#tell cmake where to look for *.h files
+include_directiories(...)
+
+#Create library "libtools"
+add_library(tools src/tools.cpp)
+
+#add executable main
+add_executable(main src/tools_main.cpp)
+
+# tell the linker to connect these objects together
+target_link_libraries(main tools)

@@ -1,0 +1,10 @@
+Compilation flags
+  Compiler choice:
+    -std=c++11
+  Enable warnings:
+    -Wall, -Wextra, -Werror
+  Optimization options:
+    -O0 # no optimization
+    -O3 or -0fast  # full optimization
+  Keep debugging symbols:
+    -g

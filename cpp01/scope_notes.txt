@@ -1,0 +1,10 @@
+All variables live in *scopes*.
+
+Scope is defined by curly brackets
+
+{
+ int a = 0;
+ # a exists here
+}  # end of scope, a gets automatically removed
+
+cout << a << endl;  # a doesn't exist outside the scope -> error

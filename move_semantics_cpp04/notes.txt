@@ -1,0 +1,16 @@
+lvalues X rvalues
+  lvalue -> has an address (can be written on the left side of the assignment operator =)
+  rvalue -> doesn't have an address (everything else)
+
+Explicit rvalue is defined using &&
+
+Use std::move(...) to explicitly convert an lvalue -> rvalue
+
+int a;  \\lvalue
+int& a_ref = a;  \\both lvalues
+
+a = 2 + 2;  \\a is lvalue, (2+2) is rvalue
+
+int b = a + 2; \\b is lvalue, (a+2) is rvalue
+
+int&& c = std::move(a)  \\c is rvalue, std::move(a) is an rvalue

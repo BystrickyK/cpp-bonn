@@ -1,0 +1,6 @@
+Const correctness
+	"const" after function name (before parameters)
+	used to mark functions (methods) that should not
+		change the state of the object
+	Ensures that we can pass objects by a const
+		referenc and still call their methods

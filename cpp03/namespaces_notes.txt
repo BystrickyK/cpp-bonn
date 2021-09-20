@@ -1,0 +1,19 @@
+namespace module_1 {
+	void Fun(){}
+}
+
+namespace module_2 {
+	void Fun(){}
+}
+
+The namespace becomes part of the function signature -> no clashing 
+
+When defining constants in a .cpp file, and these constants
+shouldn't be seed outside the file, put them into a 
+*nameless namespace*! on the top of the file
+	namespace {
+		const int kInteger = 13;
+		const float pi = 3.1415;
+		} // namespace
+Otherwise the variables propagate to other files.
+

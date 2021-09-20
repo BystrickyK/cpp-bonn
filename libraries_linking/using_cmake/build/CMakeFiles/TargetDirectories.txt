@@ -1,0 +1,4 @@
+/home/christop/cpp/libraries_linking/using_cmake/build/CMakeFiles/rebuild_cache.dir
+/home/christop/cpp/libraries_linking/using_cmake/build/CMakeFiles/edit_cache.dir
+/home/christop/cpp/libraries_linking/using_cmake/build/CMakeFiles/main.dir
+/home/christop/cpp/libraries_linking/using_cmake/build/CMakeFiles/tools.dir

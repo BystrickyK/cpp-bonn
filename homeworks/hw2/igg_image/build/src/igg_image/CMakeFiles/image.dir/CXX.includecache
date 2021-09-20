@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/christop/cpp/homeworks/hw2/igg_image/src/igg_image/image.cpp
+image.h
+/home/christop/cpp/homeworks/hw2/igg_image/src/igg_image/image.h
+io_tools.h
+/home/christop/cpp/homeworks/hw2/igg_image/src/igg_image/io_tools.h
+vector
+-
+iostream
+-
+
+/home/christop/cpp/homeworks/hw2/igg_image/src/igg_image/image.h
+vector
+-
+io_tools.h
+/home/christop/cpp/homeworks/hw2/igg_image/src/igg_image/io_tools.h
+
+/home/christop/cpp/homeworks/hw2/igg_image/src/igg_image/io_tools.h
+fstream
+-
+string
+-
+vector
+-
+
