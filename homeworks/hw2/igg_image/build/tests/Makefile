@@ -67,17 +67,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -88,6 +77,17 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -467,6 +467,21 @@ ExperimentalBuild/fast:
 .PHONY : ExperimentalBuild/fast
 
 # Convenience name for target.
+tests/CMakeFiles/test_image.dir/rule:
+	cd /home/christop/cpp/homeworks/hw2/igg_image/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_image.dir/rule
+.PHONY : tests/CMakeFiles/test_image.dir/rule
+
+# Convenience name for target.
+test_image: tests/CMakeFiles/test_image.dir/rule
+
+.PHONY : test_image
+
+# fast build rule for target.
+test_image/fast:
+	cd /home/christop/cpp/homeworks/hw2/igg_image/build && $(MAKE) -f tests/CMakeFiles/test_image.dir/build.make tests/CMakeFiles/test_image.dir/build
+.PHONY : test_image/fast
+
+# Convenience name for target.
 tests/CMakeFiles/ExperimentalUpdate.dir/rule:
 	cd /home/christop/cpp/homeworks/hw2/igg_image/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalUpdate.dir/rule
 .PHONY : tests/CMakeFiles/ExperimentalUpdate.dir/rule
@@ -541,6 +556,33 @@ ContinuousSubmit/fast:
 	cd /home/christop/cpp/homeworks/hw2/igg_image/build && $(MAKE) -f tests/CMakeFiles/ContinuousSubmit.dir/build.make tests/CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
+test_image.o: test_image.cpp.o
+
+.PHONY : test_image.o
+
+# target to build an object file
+test_image.cpp.o:
+	cd /home/christop/cpp/homeworks/hw2/igg_image/build && $(MAKE) -f tests/CMakeFiles/test_image.dir/build.make tests/CMakeFiles/test_image.dir/test_image.cpp.o
+.PHONY : test_image.cpp.o
+
+test_image.i: test_image.cpp.i
+
+.PHONY : test_image.i
+
+# target to preprocess a source file
+test_image.cpp.i:
+	cd /home/christop/cpp/homeworks/hw2/igg_image/build && $(MAKE) -f tests/CMakeFiles/test_image.dir/build.make tests/CMakeFiles/test_image.dir/test_image.cpp.i
+.PHONY : test_image.cpp.i
+
+test_image.s: test_image.cpp.s
+
+.PHONY : test_image.s
+
+# target to generate assembly for a file
+test_image.cpp.s:
+	cd /home/christop/cpp/homeworks/hw2/igg_image/build && $(MAKE) -f tests/CMakeFiles/test_image.dir/build.make tests/CMakeFiles/test_image.dir/test_image.cpp.s
+.PHONY : test_image.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -548,10 +590,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... edit_cache"
 	@echo "... NightlyMemCheck"
 	@echo "... NightlyTest"
-	@echo "... test"
 	@echo "... ContinuousConfigure"
 	@echo "... ContinuousBuild"
 	@echo "... NightlyConfigure"
@@ -573,11 +615,15 @@ help:
 	@echo "... ExperimentalStart"
 	@echo "... NightlyBuild"
 	@echo "... ExperimentalBuild"
+	@echo "... test_image"
 	@echo "... ExperimentalUpdate"
 	@echo "... ContinuousStart"
 	@echo "... ContinuousMemCheck"
 	@echo "... ContinuousTest"
 	@echo "... ContinuousSubmit"
+	@echo "... test_image.o"
+	@echo "... test_image.i"
+	@echo "... test_image.s"
 .PHONY : help
 
 

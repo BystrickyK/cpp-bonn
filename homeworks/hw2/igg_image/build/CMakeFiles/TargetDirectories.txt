@@ -10,10 +10,10 @@
 /home/christop/cpp/homeworks/hw2/igg_image/build/src/igg_image/CMakeFiles/main.dir
 /home/christop/cpp/homeworks/hw2/igg_image/build/src/igg_image/CMakeFiles/image.dir
 /home/christop/cpp/homeworks/hw2/igg_image/build/tests/CMakeFiles/rebuild_cache.dir
+/home/christop/cpp/homeworks/hw2/igg_image/build/tests/CMakeFiles/test.dir
 /home/christop/cpp/homeworks/hw2/igg_image/build/tests/CMakeFiles/edit_cache.dir
 /home/christop/cpp/homeworks/hw2/igg_image/build/tests/CMakeFiles/NightlyMemCheck.dir
 /home/christop/cpp/homeworks/hw2/igg_image/build/tests/CMakeFiles/NightlyTest.dir
-/home/christop/cpp/homeworks/hw2/igg_image/build/tests/CMakeFiles/test.dir
 /home/christop/cpp/homeworks/hw2/igg_image/build/tests/CMakeFiles/ContinuousConfigure.dir
 /home/christop/cpp/homeworks/hw2/igg_image/build/tests/CMakeFiles/ContinuousBuild.dir
 /home/christop/cpp/homeworks/hw2/igg_image/build/tests/CMakeFiles/NightlyConfigure.dir
@@ -35,6 +35,7 @@
 /home/christop/cpp/homeworks/hw2/igg_image/build/tests/CMakeFiles/ExperimentalStart.dir
 /home/christop/cpp/homeworks/hw2/igg_image/build/tests/CMakeFiles/NightlyBuild.dir
 /home/christop/cpp/homeworks/hw2/igg_image/build/tests/CMakeFiles/ExperimentalBuild.dir
+/home/christop/cpp/homeworks/hw2/igg_image/build/tests/CMakeFiles/test_image.dir
 /home/christop/cpp/homeworks/hw2/igg_image/build/tests/CMakeFiles/ExperimentalUpdate.dir
 /home/christop/cpp/homeworks/hw2/igg_image/build/tests/CMakeFiles/ContinuousStart.dir
 /home/christop/cpp/homeworks/hw2/igg_image/build/tests/CMakeFiles/ContinuousMemCheck.dir

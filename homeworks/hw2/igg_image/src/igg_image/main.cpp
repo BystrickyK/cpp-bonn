@@ -1,11 +1,13 @@
 #include <iostream>
 #include <vector>
+#include <string>
 #include "image.h"
 #include "io_tools.h"
 
 int main(){
   igg::Image image;
-  image.FillFromPgm("../data/lena.ascii.pgm");
+  std::string filename = "lena.ascii.pgm";
+  image.FillFromPgm("../data/" + filename);
 
   std::cout << image.rows() << std::endl;
   std::cout << image.cols() << std::endl;
@@ -13,10 +15,10 @@ int main(){
   std::vector<float> hist = image.ComputeHistogram(6);
 
   image.UpScale(2);
-  image.WriteToPgm("test_upscaled.ascii.pgm");
+  image.WriteToPgm("Upscaled2_" + filename);
   
   image.DownScale(2);
-  image.WriteToPgm("test_downscaled.ascii.pgm");
+  image.WriteToPgm("Downscaled2_" + filename);
 
   return 0;
 }

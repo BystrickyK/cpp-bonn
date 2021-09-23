@@ -17,6 +17,8 @@ iostream
 -
 
 /home/christop/cpp/homeworks/hw2/igg_image/src/igg_image/image.h
+gtest/gtest_prod.h
+-
 vector
 -
 io_tools.h

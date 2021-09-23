@@ -1,5 +1,6 @@
 #pragma once
 
+#include <gtest/gtest_prod.h>
 #include <vector>
 #include "io_tools.h"
 
@@ -20,7 +21,7 @@ class Image {
 
   // * File IO *
   bool FillFromPgm(const std::string& file_name);
-  bool WriteToPgm(const std::string& file_name);
+  bool WriteToPgm(const std::string& file_name) const;
 
   std::vector<float> ComputeHistogram(uint bins) const;
 

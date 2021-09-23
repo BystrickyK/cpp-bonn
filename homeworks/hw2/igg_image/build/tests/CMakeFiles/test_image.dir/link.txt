@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -fPIC -g  -rdynamic CMakeFiles/test_image.dir/test_image.cpp.o  -o ../../bin/test_image  -Wl,-rpath,/home/christop/cpp/homeworks/hw2/igg_image/lib ../lib/libgtestd.a ../lib/libgtest_maind.a ../../lib/libimage.a ../../lib/libio_tools.so ../lib/libgtestd.a -lpthread 

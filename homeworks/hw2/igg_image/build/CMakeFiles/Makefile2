@@ -132,6 +132,7 @@ src/igg_image/clean: src/igg_image/CMakeFiles/image.dir/clean
 # Directory level rules for directory tests
 
 # Recursive "all" directory target.
+tests/all: tests/CMakeFiles/test_image.dir/all
 tests/all: gtest/all
 
 .PHONY : tests/all
@@ -165,6 +166,7 @@ tests/clean: tests/CMakeFiles/NightlyCoverage.dir/clean
 tests/clean: tests/CMakeFiles/ExperimentalStart.dir/clean
 tests/clean: tests/CMakeFiles/NightlyBuild.dir/clean
 tests/clean: tests/CMakeFiles/ExperimentalBuild.dir/clean
+tests/clean: tests/CMakeFiles/test_image.dir/clean
 tests/clean: tests/CMakeFiles/ExperimentalUpdate.dir/clean
 tests/clean: tests/CMakeFiles/ContinuousStart.dir/clean
 tests/clean: tests/CMakeFiles/ContinuousMemCheck.dir/clean
@@ -848,6 +850,35 @@ ExperimentalBuild: tests/CMakeFiles/ExperimentalBuild.dir/rule
 tests/CMakeFiles/ExperimentalBuild.dir/clean:
 	$(MAKE) -f tests/CMakeFiles/ExperimentalBuild.dir/build.make tests/CMakeFiles/ExperimentalBuild.dir/clean
 .PHONY : tests/CMakeFiles/ExperimentalBuild.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/test_image.dir
+
+# All Build rule for target.
+tests/CMakeFiles/test_image.dir/all: src/igg_image/CMakeFiles/image.dir/all
+tests/CMakeFiles/test_image.dir/all: gtest/CMakeFiles/gtest_main.dir/all
+tests/CMakeFiles/test_image.dir/all: gtest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f tests/CMakeFiles/test_image.dir/build.make tests/CMakeFiles/test_image.dir/depend
+	$(MAKE) -f tests/CMakeFiles/test_image.dir/build.make tests/CMakeFiles/test_image.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/christop/cpp/homeworks/hw2/igg_image/build/CMakeFiles --progress-num=9,10 "Built target test_image"
+.PHONY : tests/CMakeFiles/test_image.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/test_image.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/christop/cpp/homeworks/hw2/igg_image/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_image.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/christop/cpp/homeworks/hw2/igg_image/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/test_image.dir/rule
+
+# Convenience name for target.
+test_image: tests/CMakeFiles/test_image.dir/rule
+
+.PHONY : test_image
+
+# clean rule for target.
+tests/CMakeFiles/test_image.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/test_image.dir/build.make tests/CMakeFiles/test_image.dir/clean
+.PHONY : tests/CMakeFiles/test_image.dir/clean
 
 #=============================================================================
 # Target rules for target tests/CMakeFiles/ExperimentalUpdate.dir

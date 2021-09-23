@@ -447,6 +447,19 @@ ExperimentalBuild/fast:
 .PHONY : ExperimentalBuild/fast
 
 #=============================================================================
+# Target rules for targets named test_image
+
+# Build rule for target.
+test_image: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_image
+.PHONY : test_image
+
+# fast build rule for target.
+test_image/fast:
+	$(MAKE) -f tests/CMakeFiles/test_image.dir/build.make tests/CMakeFiles/test_image.dir/build
+.PHONY : test_image/fast
+
+#=============================================================================
 # Target rules for targets named ExperimentalUpdate
 
 # Build rule for target.
@@ -571,6 +584,7 @@ help:
 	@echo "... ExperimentalStart"
 	@echo "... NightlyBuild"
 	@echo "... ExperimentalBuild"
+	@echo "... test_image"
 	@echo "... ExperimentalUpdate"
 	@echo "... ContinuousStart"
 	@echo "... ContinuousMemCheck"

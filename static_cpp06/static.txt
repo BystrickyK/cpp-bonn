@@ -1,0 +1,14 @@
+Static in classes
+> Static variables
+	> Exist once per class, not per object
+	> Must be defined in *.cpp files (NOT headers!)
+	> Their value is equal across all instances (objects) of the class
+> Static functions
+	 >do not have an object of a class. They can access
+	 private members, but need an object 
+
+Syntax:
+ClassName::MethodName(<params>)
+
+
+

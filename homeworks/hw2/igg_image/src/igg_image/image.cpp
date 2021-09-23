@@ -36,7 +36,7 @@ bool igg::Image::FillFromPgm(const std::string& file_name){
   return 0;
 }
 
-  bool igg::Image::WriteToPgm(const std::string& file_name){
+  bool igg::Image::WriteToPgm(const std::string& file_name) const {
     const igg::io_tools::ImageData image_data = {rows_, cols_, max_val_, data_};
     return igg::io_tools::WriteToPgm(image_data, file_name);
   }
